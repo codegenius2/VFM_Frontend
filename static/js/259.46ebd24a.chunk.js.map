@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/259.46ebd24a.chunk.js","mappings":"iJAEA,MAIA,EAJoBA,KACTC,EAAAA,EAAAA,KAAA,KAAAC,SAAG,gB","sources":["pages/requester/RequestList.js"],"sourcesContent":["import React from 'react';\r\n\r\nconst RequestList = () => {\r\n    return <p>Request List</p>\r\n}\r\n\r\nexport default RequestList;"],"names":["RequestList","_jsx","children"],"sourceRoot":""}
