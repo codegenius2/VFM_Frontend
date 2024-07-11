@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+h1 {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.item-card {
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    height: 25rem;
+    overflow: hidden;
+    width: 18rem;
+}
+
+.item-card > figure {
+    width: 90%;
+    margin: 20px auto 0 auto;
+}
+
+.item-card > figure > img {
+    width: 100%;
+}
+
+.item-details {
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
+    position: absolute;
+    top: 78%;
+    width: 100%;
+    transition: box-shadow .3s ease-in-out,
+                top .3s ease-in-out;
+}
+
+.item-card:hover .item-details {
+    box-shadow: 0 -5px 10px rgba(0,0,0,0.3);
+    top: 55%;
+}
+
+.item-details > .min-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-details > .min-details > h1 > span {
+    color: #7B7B7B;
+    display: block;
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.add_cart_btn {
+    display: "relative";
+    background-color: #245ef2;
+    border-radius: 5px;
+    color: #FFF;
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding: 10px;
+    transform: translateY(-2px);
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    width: 100%;
+    transition: box-shadow .3s ease-in-out,
+                transform .3s ease-in-out;
+}
+
+.add_cart_btn:hover {
+  box-shadow: 0 5px 10px rgba(0,0,0,.3);
+  transform: translateY(-2px);
+}

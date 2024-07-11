@@ -1,0 +1,134 @@
+{/* <div className="py-24">
+                <section className="mb-20">
+                    <p className="flex gap-1 text-sm m-b3">
+                        {t("MARCKT PLACE")}
+                        <img className="width-25" src={expand} alt="wait" />
+                        {t("DRESS ALL ITEM")}
+                    </p>
+                    <div className="bg-blue-600 text-white py-1 font-medium rounded-md text-sm">
+                        <p className="p-4 text-xl">Kaiyo Aoki [ Eclipse of Elegance ] {t("Redy Made Fist Collections2024")}</p>
+                    </div>
+                </section>
+                <section id="carosal-box">
+                    <div className="flex md:flex-row flex-col sm:gap-3 gap-5">
+                        <div className="md:w-1/2 w-full">
+                            <Carousel className="w-full">
+                                <div>
+                                    <img className="main-img-caro" src={imageProduct} alt="wait" />
+                                    <div className="favicon-product"><FavoriteBorderIcon /></div>
+                                </div>
+                                <div>
+                                    <img className="main-img-caro" src={imageProduct} alt="wait" />
+                                    <div className="favicon-product"><FavoriteBorderIcon /></div>
+                                </div>
+                                <div>
+                                    <img className="main-img-caro" src={imageProduct} alt="wait" />
+                                    <div className="favicon-product"><FavoriteBorderIcon /></div>
+                                </div>
+                            </Carousel>
+                        </div>
+                        <div className="md:w-1/2 w-full">
+                            <div>
+                                <div className="flex flex-col gap-5 py-4">
+                                    <div className="flex items-center px-5 py-1 border-b">
+                                        <span className="font-bold mr-2">{t("Category")}:</span>
+                                        <p>LADIES FASHION</p>
+                                    </div>
+                                    <div className="flex items-center px-5 py-1 border-b">
+                                        <span className="font-bold mr-3">{t("hashtag")}:</span>
+                                        <TagGroup tags={['＃2024-SS', 'First', 'Collection', '#DRESS', '#JAPA']} />
+                                    </div>
+                                    <div className="flex items-center px-5 py-1 border-b">
+                                        <span className="font-bold mr-2">{t("price")}:</span>
+                                        <p>＄400.00 USD</p>
+                                    </div>
+                                    <div className="flex items-center px-5 py-1 border-b">
+                                        <span className="font-bold mr-2">{t("option")}:</span>
+                                        <p>＄35.00 USD～</p>
+                                    </div>
+                                </div>
+                                <Button onClick={handleOpen} sx={{ marginBottom: '10px', width: '100%', padding: '15px', shadow: '3px 4px 4px -3px #ccc' }} size="large"
+                                    startIcon={<MdOutlineAddShoppingCart />} variant="contained">
+                                    <span className="pl-20">{t("ADD TO CART")}</span>
+                                </Button>
+                                <button className="bg-black text-white font-bold border-none py-2 w-full block text-md round-md mb-3 rounded-md hover:opacity-80 transition duration-500 shadow-md shadow-gray-500 hover:shadow-none">
+                                    {t("Inquiries regarding this product (2)")}
+                                </button>
+                                <button className="bg-black text-white font-bold border-none py-2 w-full block text-md round-md rounded-md hover:opacity-80 transition duration-500 shadow-md shadow-gray-500 hover:shadow-none">
+                                    {t("Nominate the main designer and make a request")}
+                                </button>
+                            </div>
+                            <div className="border border-gray-300 m-auto mt-10 text-center shadow-lg w-full p-10 shadow-gray-400 ">
+                                <VFM_Avatar img={Ellipse2} size={32} />
+                                <h1 className="text-[#5E4FDC]">DESIGNER</h1>
+                                <p className="designer-title">Kaiyo Aoki</p>
+                                <p className="text-lg font-thin mt-1 mb-1">すべてのデザインを見る</p>
+                                <p className="text-lg font-thin mt-1 mb-1">指名してデザインを依頼する</p>
+                                <div className="font-thin text-xl my-2">
+                                    依頼実績
+                                    <img className="w-80 relative my-2 block mx-auto" src={Group9} alt="wait" />
+                                    50件
+                                </div>
+                                <div className="text-center">
+                                    ご注文いただいてから納品までの流れは以下の通りです。ご注文からお届けまでの流れ（デジタルファッション版） 
+                                           デジタルアイテム取得プロセス： ご注文受付（お支払完了後）→ デジタルアイテム制作・取得（1~4日）→ 品質確認 → 配信 上記は、あくまで参考程度であることにご留意ください。
+                                好きなジャンルは、サイバーパンク・00年代風 よろしくお願いいたします。
+                                <p className="text-blue-600 cursor-pointer mt-2" onClick={() => { profileOpen() }}>{t("Read more ...")}</p>
+                            </div>
+                            </div>
+                            </div>
+                    </div>
+                            <div className="mb-10">
+                            <p className="text-lg font-thin mt-10">あなたへのオススメ</p>
+                    <hr className="w-2/3 mb-10" />
+                    <div className="product-wrap-1-div-respon sive flex flex-wrap">
+                           <ProductCard products={NewProducts} isNew={true} />
+                    
+                </div> 
+                              </div>
+                    
+                    <ChatBox recipient_id={1}/>       
+                                    </section >
+                    
+            <AddToCartModal
+                    open={open}
+                onCanc
+        el={handleClose}
+                onClickOK ={handleCloseFirst}
+                 /> 
+            <Modal
+      open={open1}
+                onCancel={handelContinue}
+                footer={<></>}
+                aria-labelledby="mod a l -modal-titl e"
+                    aria-describedby="m
+    odal-modal-description"
+            >    
+                <p>引き続き、お買い物をお楽しみください！ </p>
+            </Modal>
+        < Modal open={profile} onCancel={profileClose} footer= {<></>}
+                  width={600}   
+                    aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+        >
+                <div className="m-auto mt-10 text-center w-full md:p-10 p-0">
+                    <VFM_Avatar img={Ellipse2} size={32} />
+                    <h1 className="text-[#5E4FDC]">DESIGNER</h1>
+                    <p className="designer-title">Kaiyo Aoki</p>
+                    <p className="text-lg font-thin mt-1 mb-1">すべてのデザインを見る</p>
+                    <p className="text-lg font-thin mt-1 mb-1">指名してデザインを依頼する</p>
+                    <div className="font-thin text-xl my-2">
+                        依頼実績
+                        <img className="w-80 relative my-2 block mx-auto" src={Group9} alt="wait" />
+                        50件
+                    </div>
+                    <div className="text-center">
+                        <p>ご注文いただいてから納品までの流れは以下の通りです</p>
+                        <p>ご注文からお届けまでの流れ（デジタルファッション版）</p>
+                        <p>テム取得プロセス：</p>
+                        <p>ご注文受付（お支払完了後）→ デジタルアイテム制作・取 品質確認 → </p>
+                    </div>
+                </div>
+
+            </>
+        </> */}
